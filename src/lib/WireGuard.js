@@ -109,6 +109,7 @@ PreUp = ${WG_PRE_UP}
 PostUp = ${WG_POST_UP}
 PreDown = ${WG_PRE_DOWN}
 PostDown = ${WG_POST_DOWN}
+${WG_MTU ? `MTU = ${WG_MTU}\n` : ''}
 `;
 
     for (const [clientId, client] of Object.entries(config.clients)) {
